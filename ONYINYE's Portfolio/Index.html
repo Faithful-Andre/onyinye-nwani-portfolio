@@ -1,0 +1,190 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Portfolio</title>
+  <style>
+    body {
+      background-color: #fffdd9; /* Cream */
+      scroll-behavior: smooth; /* Smooth scroll */
+    }
+  </style>
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+
+<body class="text-gray-900">
+  <!-- Navbar -->
+  <header class="bg-sky-700 text-white sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-4xl font-bold">ONYINYE NWANI</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#about" class="hover:text-sky-200">About</a>
+        <a href="#skills" class="hover:text-sky-200">Skills</a>
+        <a href="#certificates" class="hover:text-sky-200">Certificates</a>
+        <a href="#cv" class="hover:text-sky-200">CV</a>
+        <a href="#projects" class="hover:text-sky-200">Projects</a>
+        <a href="#contact" class="hover:text-sky-200">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-white">
+    <img src="Image/profile.jpg" alt="Profile" class="mx-auto w-70 h-80 rounded-full shadow-lg mb-4">
+    <h2 class="text-3xl font-bold text-sky-700">Hi, I'm Onyinye.</h2>
+    <p class="mt-2 text-lg text-gray-700">Aspiring SOC Analyst | Cybersecurity Enthusiast</p>
+    <div class="mt-4 space-x-4">
+      <a href="#projects" class="bg-sky-700 text-white px-5 py-2 rounded-lg shadow hover:bg-sky-800">View Projects</a>
+      <a href="#contact" class="bg-white border border-sky-700 text-sky-700 px-5 py-2 rounded-lg shadow hover:bg-sky-100">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-6xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold text-deepblue-700 mb-6">About Me</h2>
+    <p class="text-lg text-gray-700 leading-relaxed">
+      I’m transitioning into cybersecurity from Human Resources, 
+      and I’m passionate about protecting systems and people from cyber threats. 
+      I enjoy hands-on labs, analyzing incidents, and continuously learning new security skills.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-sky-50 py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-sky-700 mb-6">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="bg-white shadow rounded-lg p-5">Network Security</div>
+        <div class="bg-white shadow rounded-lg p-5">Threat Intelligence</div>
+        <div class="bg-white shadow rounded-lg p-5">Incident Respose</div>
+        <div class="bg-white shadow rounded-lg p-5">Log Analysis</div>
+        <div class="bg-white shadow rounded-lg p-5">Nmap</div>
+        <div class="bg-white shadow rounded-lg p-5">Attack & Tchniques</div>
+        <div class="bg-white shadow rounded-lg p-5">Offensive Security</div>
+        <div class="bg-white shadow rounded-lg p-5">Defensive Security</div>
+        <div class="bg-white shadow rounded-lg p-5">SQL</div>
+        <div class="bg-white shadow rounded-lg p-5">Linux</div>
+        <div class="bg-white shadow rounded-lg p-5">Grep</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="max-w-6xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold text-sky-700 mb-6">Certificates</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img src="Image/1.png" alt="Certificate 1" class="rounded-lg shadow-lg">
+      <img src="Image/2.png" alt="Certificate 1" class="rounded-lg shadow-lg">
+      <img src="Image/3.png" alt="Certificate 1" class="rounded-lg shadow-lg">
+      <img src="Image/4.png" alt="Certificate 1" class="rounded-lg shadow-lg">
+      <img src="Image/5.png" alt="Certificate 1" class="rounded-lg shadow-lg">
+      <img src="Image/6.png" alt="Certificate 1" class="rounded-lg shadow-lg">
+      <img src="Image/7.png" alt="Certificate 1" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- CV Section -->
+  <section id="cv" class="bg-sky-50 py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-sky-700 mb-6">Curriculum Vitae</h2>
+      <a href="cv.pdf.pdf" target="_blank" class="bg-sky-700 text-white px-6 py-3 rounded-lg shadow hover:bg-sky-800">View CV</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="max-w-6xl mx-auto py-16 px-4">
+  <h2 class="text-3xl font-bold text-sky-700 mb-6">Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="bg-white shadow rounded-lg p-6">
+      <h3 class="text-2xl font-semibold mb-2">Access Control Worksheet</h3>
+      <a href="Access control worksheet.pdf" target="_blank" class="block bg-sky-700 text-white px-4 py-2 rounded hover:bg-sky-800">View PDF</a>
+    </div>
+    <div class="bg-white shadow rounded-lg p-6">
+      <h3 class="text-2xl font-semibold mb-2">Activity Data Leak</h3>
+      <a href="Activity Data leak.pdf" target="_blank" class="block bg-sky-700 text-white px-4 py-2 rounded hover:bg-sky-800">View PDF</a>
+    </div>
+    <div class="bg-white shadow rounded-lg p-6">
+      <h3 class="text-2xl font-semibold mb-2">Cybersecurity Incident Report Traffic analysis</h3>
+      <a href="Cybersecurity incident report network traffic analysis.pdf" target="_blank" class="block bg-sky-700 text-white px-4 py-2 rounded hover:bg-sky-800">View PDF</a>
+    </div>
+    <div class="bg-white shadow rounded-lg p-6">
+      <h3 class="text-2xl font-semibold mb-2">Incident handler's Journal</h3>
+      <a href="Incident handlers journal.pdf" target="_blank" class="block bg-sky-700 text-white px-4 py-2 rounded hover:bg-sky-800">View PDF</a>
+    </div>
+    <div class="bg-white shadow rounded-lg p-6">
+      <h3 class="text-2xl font-semibold mb-2">Incident Report Analysis</h3>
+      <a href="Incident report analysis.pdf" target="_blank" class="block bg-sky-700 text-white px-4 py-2 rounded hover:bg-sky-800">View PDF</a>
+    </div>
+    <div class="bg-white shadow rounded-lg p-6">
+      <h3 class="text-2xl font-semibold mb-2">PASTA Worksheet</h3>
+      <a href="PASTA worksheet.pdf" target="_blank" class="block bg-sky-700 text-white px-4 py-2 rounded hover:bg-sky-800">View PDF</a>
+    </div>
+    <div class="bg-white shadow rounded-lg p-6">
+      <h3 class="text-2xl font-semibold mb-2">Security Risk Assessment Report</h3>
+      <a href="Security risk assessment report.pdf" target="_blank" class="block bg-sky-700 text-white px-4 py-2 rounded hover:bg-sky-800">View PDF</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-sky-50 py-16 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-sky-700 mb-6">Contact Me</h2>
+    <form 
+      id="contactForm" 
+      action="https://formspree.io/f/mwpnkpka" 
+      method="POST" 
+      class="grid grid-cols-1 gap-4"
+    >
+      <input type="text" name="name" placeholder="Name" class="border rounded-lg p-3" required>
+      <input type="email" name="email" placeholder="Email" class="border rounded-lg p-3" required>
+      <textarea name="message" placeholder="Message" rows="5" class="border rounded-lg p-3" required></textarea>
+      <button type="submit" class="bg-sky-700 text-white py-3 rounded-lg hover:bg-sky-800">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- Script to clear form -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function () {
+      // Clear form fields after submission
+      setTimeout(() => {
+        form.reset();
+      }, 100);
+    });
+  });
+</script>
+
+
+  <!-- Social Media Section -->
+<section id="socials" class="bg-[#fffdd9] py-10 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-bold text-sky-700 mb-4">Find Me On</h2>
+    <div class="flex justify-center gap-6">
+      <a href="https://www.linkedin.com/in/onyinye-nwani-707289228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BzL%2BnaXHgR%2FeDGExerM4SGw%3D%3D" target="_blank" class="text-sky-700 hover:text-sky-900 text-3xl">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.github.com/Onyinmama" target="_blank" class="text-sky-700 hover:text-sky-900 text-3xl">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/nwani_onyinye?igsh=ZmUwYWRxZmFwM3lm&utm_source=qr" target="_blank" class="text-sky-700 hover:text-sky-900 text-3xl">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-sky-700 text-white py-6 text-center">
+    <p>&copy; 2025 Onyinye Nwani. All rights reserved.</p>
+  </footer>
+</body>
+</html>
