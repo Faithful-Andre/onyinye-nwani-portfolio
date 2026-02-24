@@ -14,13 +14,49 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
+      const icon = menuBtn.querySelector("i");
+
+      let isOpen = false;
+
+      menuBtn.addEventListener("click", function () {
+        if (!isOpen) {
+          mobileMenu.classList.remove("max-h-0", "opacity-0");
+          mobileMenu.classList.add("max-h-96", "opacity-100");
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-xmark");
+          isOpen = true;
+        } else {
+          mobileMenu.classList.add("max-h-0", "opacity-0");
+          mobileMenu.classList.remove("max-h-96", "opacity-100");
+          icon.classList.remove("fa-xmark");
+          icon.classList.add("fa-bars");
+          isOpen = false;
+        }
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener("click", function () {
+          mobileMenu.classList.add("max-h-0", "opacity-0");
+          mobileMenu.classList.remove("max-h-96", "opacity-100");
+          icon.classList.remove("fa-xmark");
+          icon.classList.add("fa-bars");
+          isOpen = false;
+        });
+      });
+    });
+  </script>
 </head>
 
 <body class="text-gray-900">
   <!-- Navbar -->
   <header class="bg-sky-700 text-white sticky top-0 z-50">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-4xl font-bold">ONYINYE NWANI</h1>
+      <h1 class="text-3xl font-bold">ONYINYE NWANI</h1>
       <nav class="space-x-6 hidden md:flex">
         <a href="#about" class="hover:text-sky-200">About</a>
         <a href="#skills" class="hover:text-sky-200">Skills</a>
@@ -29,6 +65,19 @@
         <a href="#projects" class="hover:text-sky-200">Projects</a>
         <a href="#contact" class="hover:text-sky-200">Contact</a>
       </nav>
+      <!-- Hamburger Button (Mobile Only) -->
+      <button id="menuBtn" class="md:hidden text-3xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="flex flex-col bg-sky-700 text-white px-4 overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out space-y-3 md:hidden text-center">
+      <a href="#about" class="mobile-link block">About</a>
+      <a href="#skills" class="mobile-link block">Skills</a>
+      <a href="#certificates" class="mobile-link block">Certificates</a>
+      <a href="#cv" class="mobile-link block">CV</a>
+      <a href="#projects" class="mobile-link block">Projects</a>
+      <a href="#contact" class="mobile-link block">Contact</a>
     </div>
   </header>
 
@@ -47,8 +96,8 @@
   <section id="about" class="max-w-6xl mx-auto py-16 px-4">
     <h2 class="text-3xl font-bold text-deepblue-700 mb-6">About Me</h2>
     <p class="text-lg text-gray-700 leading-relaxed">
-      I’m transitioning into cybersecurity from Human Resources, 
-      and I’m passionate about protecting systems and people from cyber threats. 
+      I am transitioning into cybersecurity from Human Resources, 
+      and I am passionate about protecting systems and people from cyber threats. 
       I enjoy hands-on labs, analyzing incidents, and continuously learning new security skills.
     </p>
   </section>
@@ -91,7 +140,7 @@
   <section id="cv" class="bg-sky-50 py-16 px-4">
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-sky-700 mb-6">Curriculum Vitae</h2>
-      <a href="cv.pdf.pdf" target="_blank" class="bg-sky-700 text-white px-6 py-3 rounded-lg shadow hover:bg-sky-800">View CV</a>
+      <a href="PDFs/cv.pdf.pdf" target="_blank" class="bg-sky-700 text-white px-6 py-3 rounded-lg shadow hover:bg-sky-800">View CV</a>
     </div>
   </section>
 
@@ -184,7 +233,7 @@
 
   <!-- Footer -->
   <footer class="bg-sky-700 text-white py-6 text-center">
-    <p>&copy; 2025 Onyinye Nwani. All rights reserved.</p>
+    <p>&copy; 2026 Onyinye Nwani. All rights reserved.</p>
   </footer>
 </body>
 </html>
